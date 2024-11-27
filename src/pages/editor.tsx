@@ -11,7 +11,7 @@ import { SEO } from "src/constants/seo";
 import { darkTheme, lightTheme } from "src/constants/theme";
 import { Editor } from "src/containers/Editor";
 import { BottomBar } from "src/containers/Editor/components/BottomBar";
-import { UpgradeModal } from "src/containers/Modals";
+// import { UpgradeModal } from "src/containers/Modals";
 import { Toolbar } from "src/containers/Toolbar";
 import useConfig from "src/store/useConfig";
 import useFile from "src/store/useFile";
@@ -67,21 +67,20 @@ const EditorPage = () => {
     <>
       <NextSeo
         {...SEO}
-        title="Editor | JSON Crack"
+        title="JSON Crack"
         description="JSON Crack Editor is a tool for visualizing into graphs, analyzing, editing, formatting, querying, transforming and validating JSON, CSV, YAML, XML, and more."
-        canonical="https://jsoncrack.com/editor"
       />
       <ThemeProvider theme={darkmodeEnabled ? darkTheme : lightTheme}>
         <QueryClientProvider client={queryClient}>
           <ExternalMode />
           <ModalController />
-          <UpgradeModal
+          {/* <UpgradeModal
             opened={upgradeVisible}
             onClose={() => {
               setUpgradeVisible(false);
               Cookie.set("upgrade_shown", "true", { expires: 1 });
             }}
-          />
+          /> */}
           <StyledEditorWrapper>
             <StyledPageWrapper>
               <Toolbar />

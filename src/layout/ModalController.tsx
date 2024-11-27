@@ -9,7 +9,7 @@ type ModalComponent = { key: Modal; component: React.FC<ModalProps> };
 const modalComponents: ModalComponent[] = [
   { key: "import", component: Modals.ImportModal },
   { key: "download", component: Modals.DownloadModal },
-  { key: "upgrade", component: Modals.UpgradeModal },
+  // { key: "upgrade", component: Modals.UpgradeModal },
   { key: "jwt", component: Modals.JWTModal },
   { key: "node", component: Modals.NodeModal },
   { key: "schema", component: Modals.SchemaModal },

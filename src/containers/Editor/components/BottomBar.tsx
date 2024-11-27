@@ -150,10 +150,10 @@ export const BottomBar = () => {
           target="_blank"
           rel="noopener"
         >
-          <StyledBottomBarItem>
+          {/* <StyledBottomBarItem>
             <VscFeedback />
             Feedback
-          </StyledBottomBarItem>
+          </StyledBottomBarItem> */}
         </Link>
       </StyledRight>
     </StyledBottomBar>

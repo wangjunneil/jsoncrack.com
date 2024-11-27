@@ -10,19 +10,21 @@ import { LovedBy } from "src/containers/Landing/LovedBy";
 import { Section1 } from "src/containers/Landing/Section1";
 import { SeePremium } from "src/containers/Landing/SeePremium";
 import Layout from "src/layout/Layout";
+import EditorPage from "./editor";
 
 export const HomePage = (props: InferGetStaticPropsType<typeof getStaticProps>) => {
   return (
-    <Layout>
-      <NextSeo {...SEO} canonical="https://jsoncrack.com" />
-      <HeroSection />
-      <HeroPreview />
-      <Section1 />
-      <Features />
-      <FAQ />
-      <LovedBy stars={props.stars} />
-      <SeePremium />
-    </Layout>
+    <EditorPage />
+    // <Layout>
+    //   <NextSeo {...SEO} canonical="https://jsoncrack.com" />
+    //   <HeroSection />
+    //   <HeroPreview />
+    //   <Section1 />
+    //   <Features />
+    //   <FAQ />
+    //   <LovedBy stars={props.stars} />
+    //   <SeePremium />
+    // </Layout>
   );
 };
 

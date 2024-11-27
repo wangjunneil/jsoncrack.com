@@ -110,12 +110,12 @@ export const ToolsMenu = () => {
         <Menu.Item fz={12} leftSection={<FaRandom />} onClick={randomizeData}>
           Randomize Data
         </Menu.Item>
-        <Menu.Item
+        {/* <Menu.Item
           fz={12}
           leftSection={<LuGlobe />}
           rightSection={<VscLock />}
           onClick={() => {
-            setVisible("upgrade")(true);
+            // setVisible("upgrade")(true);
             gaEvent("rest_client_modal");
           }}
         >
@@ -126,7 +126,7 @@ export const ToolsMenu = () => {
           leftSection={<FaWandMagicSparkles />}
           rightSection={<VscLock />}
           onClick={() => {
-            setVisible("upgrade")(true);
+            // setVisible("upgrade")(true);
             gaEvent("open_ai_filter_modal");
           }}
         >
@@ -137,12 +137,12 @@ export const ToolsMenu = () => {
           leftSection={<MdCompare />}
           rightSection={<VscLock />}
           onClick={() => {
-            setVisible("upgrade")(true);
+            // setVisible("upgrade")(true);
             gaEvent("open_compare_data_modal");
           }}
         >
           Compare Data
-        </Menu.Item>
+        </Menu.Item> */}
       </Menu.Dropdown>
     </Menu>
   );

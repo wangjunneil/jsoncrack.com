@@ -88,13 +88,13 @@ export const OptionsMenu = () => {
         >
           <Text size="xs">Dark Mode</Text>
         </Menu.Item>
-        <Menu.Item
+        {/* <Menu.Item
           closeMenuOnClick
           leftSection={<VscLock />}
           onClick={() => setVisible("upgrade")(true)}
         >
           <Text size="xs">Customize Graph Colors</Text>
-        </Menu.Item>
+        </Menu.Item> */}
       </Menu.Dropdown>
     </Menu>
   );

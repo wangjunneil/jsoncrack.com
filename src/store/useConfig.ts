@@ -4,7 +4,7 @@ import { ViewMode } from "src/enums/viewMode.enum";
 import useGraph from "../containers/Editor/components/views/GraphView/stores/useGraph";
 
 const initialStates = {
-  darkmodeEnabled: false,
+  darkmodeEnabled: true,
   collapseButtonVisible: true,
   childrenCountVisible: true,
   imagePreviewEnabled: true,
